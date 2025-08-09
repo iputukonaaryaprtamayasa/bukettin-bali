@@ -1,109 +1,164 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bukettin Bali</title>
+    <title>@buket_balii</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <style>
       body {
-        background-color: #808080; /* Warna latar belakang abu-abu */
-        font-family: Arial, sans-serif;
-        text-align: center;
+        background-color: #2d2d2d;
         color: white;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
       }
-      .container {
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 20px;
-      }
+
+      /* Logo profil di atas */
       .logo {
-        margin: 20px 0;
+        margin-top: 40px;
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
       }
-      .text {
-        font-weight: bold;
+
+      h2 {
+        margin: 10px 0 5px;
+      }
+      h2 a {
+        color: white;
+        text-decoration: none;
+      }
+      h2 a:hover {
+        text-decoration: underline;
+      }
+      p {
+        color: #ccc;
+        font-size: 14px;
         margin-bottom: 20px;
       }
-      .social-link {
-        font-size: 24px; /* Ukuran font lebih besar untuk @bukettinbali */
-        font-weight: bold; /* Menebalkan teks */
+      h3 {
+        margin: 25px 0 10px;
       }
-      .white-box {
-        background-color: white;
-        color: black;
-        padding: 10px;
-        margin: 10px 0;
+
+      /* Container tombol */
+      .btn-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+      }
+
+      /* Tombol */
+      .btn {
         display: flex;
         align-items: center;
-        justify-content: flex-start; /* Ubah menjadi flex-start untuk menyelaraskan ke kiri */
-        cursor: pointer; /* Menambahkan kursor pointer untuk menunjukkan bahwa ini bisa diklik */
-      }
-      .white-box img {
-        width: 40px; /* Ukuran logo yang lebih besar */
-        height: 40px; /* Ukuran logo yang lebih besar */
-        margin-right: 10px;
-      }
-      a {
+        background-color: white;
         color: black;
+        width: 300px;
+        padding: 12px 15px;
+        border-radius: 10px;
         text-decoration: none;
-        font-size: 16px; /* Ukuran font yang sama untuk semua tautan */
-        flex-grow: 1; /* Memungkinkan tautan untuk mengambil ruang yang tersisa */
+        font-size: 16px;
+        font-weight: bold;
+        transition: transform 0.2s, background-color 0.2s;
       }
-      a:hover {
-        text-decoration: underline; /* Menambahkan efek hover pada tautan */
+
+      /* Semua ikon di tombol punya ukuran sama */
+      .btn img {
+        width: 40px;
+        height: 40px;
+        margin-right: 12px;
+        border-radius: 6px;
+        object-fit: contain;
+        background-color: transparent;
+      }
+
+      .btn:hover {
+        transform: scale(1.03);
+        background-color: #f1f1f1;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="logo">
-        <img src="jpg/logo-buket2-removebg-preview.png" alt="Logo Buket Bali" />
-        <!-- Ganti 'logo.jpg' dengan nama file logo Anda -->
-      </div>
-      <div class="social-link">
-        <a href="https://www.instagram.com/buket_balii/" target="_blank"
-          >@bukettinbali</a
-        >
-      </div>
-
-      <div
-        class="white-box"
-        onclick="window.open('https://wa.me/6289670478443', '_blank')"
+    <!-- Logo profil -->
+    <img src="jpg/logo-buketnew-removebg-preview.png" alt="Logo" class="logo" />
+    <h2>
+      <a href="https://www.instagram.com/buket_balii/" target="_blank"
+        >@buket_balii</a
       >
-        <img src="jpg/logo-wa-removebg-preview.png" alt="Logo WhatsApp" />
-        <a href="https://wa.me/6289670478443" target="_blank"
-          >WhatsApp Dalung</a
-        >
-      </div>
+    </h2>
+    <p>🌸 BUKET BALI MURAH 🌸</p>
 
-      <div
-        class="white-box"
-        onclick="window.open('https://wa.me/6289670478443', '_blank')"
+    <!-- Order Here -->
+    <h3>ORDER HERE 👇</h3>
+    <div class="btn-container">
+      <!-- Cek Harga -->
+      <a
+        href="https://drive.google.com/drive/folders/117r9ldI21lr3R0s3HcBEb_Q4Tiy1hRAi"
+        target="_blank"
+        class="btn"
       >
-        <img src="jpg/logo-wa-removebg-preview.png" alt="Logo WhatsApp" />
-        <a href="https://wa.me/6289670478443" target="_blank"
-          >WhatsApp Gunung Agung</a
-        >
-      </div>
+        <img src="jpg/foto-produk-removebg-preview.png" alt="Buket" />
+        Cek Harga
+      </a>
 
-      <div
-        class="white-box"
-        onclick="window.open('https://maps.app.goo.gl/WHdCffm4fY6UNYyB9', '_blank')"
-      >
-        <img src="jpg/logo-gmaps-removebg-preview.png" alt="Logo Google Maps" />
-        <a href="https://maps.app.goo.gl/WHdCffm4fY6UNYyB9" target="_blank"
-          >Lokasi Dalung</a
-        >
-      </div>
+      <!-- WhatsApp -->
+      <a href="https://wa.me/6289670478443" target="_blank" class="btn">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+          alt="WhatsApp"
+        />
+        WhatsApp
+      </a>
 
-      <div
-        class="white-box"
-        onclick="window.open('https://maps.app.goo.gl/kZTnN4zmEzK8oEbJA', '_blank')"
+      <!-- Instagram -->
+      <a
+        href="https://www.instagram.com/buket_balii/"
+        target="_blank"
+        class="btn"
       >
-        <img src="jpg/logo-gmaps-removebg-preview.png" alt="Logo Google Maps" />
-        <a href="https://maps.app.goo.gl/kZTnN4zmEzK8oEbJA" target="_blank"
-          >Lokasi Gunung Agung</a
-        >
-      </div>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+          alt="Instagram"
+        />
+        Instagram
+      </a>
+
+      <!-- TikTok -->
+      <a href="https://www.tiktok.com/@buket_balii" target="_blank" class="btn">
+        <img src="jpg/logo-tiktok.webp" alt="TikTok" />
+        TikTok
+      </a>
+    </div>
+
+    <!-- Location -->
+    <h3>LOCATION 📍</h3>
+    <div class="btn-container">
+      <!-- Lokasi 1 -->
+      <a
+        href="https://maps.app.goo.gl/GXqB43Fo53fJbvp78"
+        target="_blank"
+        class="btn"
+      >
+        <img src="jpg/logo-gmaps.png" alt="Maps" />
+        Dalung, Kerobokan Kaja
+      </a>
+
+      <!-- Lokasi 2 -->
+      <a
+        href="https://maps.app.goo.gl/oQHvz9269cS3M4M9A"
+        target="_blank"
+        class="btn"
+      >
+        <img src="jpg/logo-gmaps.png" alt="Maps" />
+        Merthayasa, Gunung Agung
+      </a>
     </div>
   </body>
 </html>
