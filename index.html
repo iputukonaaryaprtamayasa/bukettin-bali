@@ -18,17 +18,26 @@
         text-align: center;
         padding-bottom: 40px;
 
-        /* Background dengan siluet */
+        /* Background dengan siluet bunga yang lebih terlihat */
         background: linear-gradient(
-            rgba(45, 45, 45, 0.9),
-            rgba(45, 45, 45, 0.9)
+            rgba(45, 45, 45, 0.6),
+            rgba(45, 45, 45, 0.6)
           ),
-          url("jpg/bacround3.jpg"); /* ganti URL ini dengan siluet bunga */
+          url("jpg/bacround3.jpg");
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-blend-mode: overlay;
+      }
+
+      /* Mobile background fix */
+      @media (max-width: 768px) {
+        body {
+          background-size: cover;
+          background-position: center top;
+          background-attachment: scroll;
+        }
       }
 
       /* Logo profil di atas */
@@ -38,7 +47,6 @@
         height: 140px;
         border-radius: 50%;
         object-fit: cover;
-        /* border: 3px solid rgba(255, 255, 255, 0.2); */
       }
 
       h2 {
@@ -74,13 +82,15 @@
         align-items: center;
         background-color: white;
         color: black;
-        width: 300px;
+        max-width: 300px;
+        width: 100%;
         padding: 12px 15px;
         border-radius: 10px;
         text-decoration: none;
         font-size: 16px;
         font-weight: bold;
         transition: transform 0.2s, background-color 0.2s;
+        margin: 0 auto;
       }
 
       /* Semua ikon di tombol punya ukuran sama */
@@ -102,6 +112,8 @@
       @media (max-width: 500px) {
         .btn {
           width: 90%;
+          margin-left: auto;
+          margin-right: auto;
         }
       }
     </style>
